@@ -1,0 +1,47 @@
+<!DOCTYPE html>   <!--Declaration of html5 and Css3 document-->
+<html>
+  <head>
+  	<title>Css3 animation using transition</title>  <!--Title of webpage-->
+  	<meta charset="UTF-8">  <!--Chracter Encoding-->
+  	<style>  /* Internal styling element */
+  	   h1 {
+  	      color: blue; 
+  	      text-align: center;   	
+  	   }
+
+  	   h2 {
+  	   	color: white;
+  	   	padding: 39px;
+  	   }
+      /* Creating a div */
+  	   div {
+  	   	height: 110px;
+  	   	width: 120px;
+  	   	background-color: green;
+  	   	border-radius: 0px;
+        margin-left: 40%; 
+      }
+
+      /* This is animation code */
+  	   @keyframes example  {
+  	   	0%  { background-color: orange; border-radius: 10%; }
+  	   	25% {background-color: orange; border-radius: 25%; }
+  	   	50% {background-color: orange; border-radius: 50%; }
+  	  	75% {background-color: orange; border-radius: 75%; }
+  	   	100% {background-color: orange; border-radius: 100%; }
+  	   
+  	   }
+       
+      /* The element to apply the animation to */
+  	   div:hover {
+	      animation: example 5s linear ;
+        animation-iteration-count: infinite;
+        cursor: pointer; 	
+  	   }
+  	</style>
+  </head>
+  <body>   <!--html body content-->
+  	<h1>Css3 Animation using Transition</h1>  <!--Heading of page-->
+  	<div><h2>Box</h2></div>
+  </body>
+</html>  <!--End of html-->
